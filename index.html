@@ -2,72 +2,169 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="A time tracking dashboard" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>Frontend Mentor | Time Tracking Dashboard</title>
 </head>
 
 <body>
-
   <main>
-    Report for
-    Jeremy Robson
+    <article class="container">
+      <div class="profile-card">
+        <div class="profile-header">
+          <img src="./images/image-jeremy.png" alt="User Profile" />
+          <div class="profile-header-text">
+            <p>Report for</p>
+            <h1>Jeremy Robson</h1>
+          </div>
+        </div>
+        <nav class="profile-nav">
+          <ul>
+            <li>Daily</li>
+            <li>Weekly</li>
+            <li>Monthly</li>
+          </ul>
+        </nav>
+      </div>
 
-    Daily
-    Weekly
-    Monthly
+      <div class="activity-card work">
+        <div class="activity-card-icon">
+          <img src="images/icon-work.svg" alt="work">
+        </div>
+        <div class="activity-card-body">
+          <div class="activity-card-header">
+            <span>Work</span>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <div class="activity-card-content">
+            <h2>32hrs</h2>
+            <p>Last Week - 36hrs</p>
+            <!-- 5hrs daily -->
+            <!-- Previous - 7hrs daily -->
+            <!-- 32hrs weekly -->
+            <!-- Previous - 36hrs weekly -->
+            <!-- 103hrs monthly -->
+            <!-- Previous - 128hrs monthly -->
+          </div>
+        </div>
+      </div>
 
-    Work
-    5hrs <!-- daily -->
-    Previous - 7hrs <!-- daily -->
-    32hrs <!-- weekly -->
-    Previous - 36hrs <!-- weekly -->
-    103hrs <!-- monthly -->
-    Previous - 128hrs <!-- monthly -->
+      <div class="activity-card play">
+        <div class="activity-card-icon">
+          <img src="images/icon-play.svg" alt="play">
+        </div>
+        <div class="activity-card-body">
+          <div class="activity-card-header">
+            <span>Play</span>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <div class="activity-card-content">
+            <h2>10hrs</h2>
+            <p>Last Week - 8hrs</p>
+            <!-- 1hr daily -->
+            <!-- Previous - 2hrs daily -->
+            <!-- 10hrs weekly -->
+            <!-- Previous - 8hrs weekly -->
+            <!-- 23hrs monthly -->
+            <!-- Previous - 29hrs monthly -->
+          </div>
+        </div>
+      </div>
 
-    Play
-    1hr <!-- daily -->
-    Previous - 2hrs <!-- daily -->
-    10hrs <!-- weekly -->
-    Previous - 8hrs <!-- weekly -->
-    23hrs <!-- monthly -->
-    Previous - 29hrs <!-- monthly -->
+      <div class="activity-card study">
+        <div class="activity-card-icon">
+          <img src="images/icon-study.svg" alt="study">
+        </div>
+        <div class="activity-card-body">
+          <div class="activity-card-header">
+            <span>Study</span>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <div class="activity-card-content">
+            <h2>4hrs</h2>
+            <p>Last Week - 7hrs</p>
+            <!-- 0hrs daily -->
+            <!-- Previous - 1hr daily -->
+            <!-- 4hrs weekly -->
+            <!-- Previous - 7hrs weekly -->
+            <!-- 13hrs monthly -->
+            <!-- Previous - 19hrs monthly -->
+          </div>
+        </div>
+      </div>
 
-    Study
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 7hrs <!-- weekly -->
-    13hrs <!-- monthly -->
-    Previous - 19hrs <!-- monthly -->
+      <div class="activity-card exercise">
+        <div class="activity-card-icon">
+          <img src="images/icon-exercise.svg" alt="exercise">
+        </div>
+        <div class="activity-card-body">
+          <div class="activity-card-header">
+            <span>Exercise</span>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <div class="activity-card-content">
+            <h2>4hrs</h2>
+            <p>Last Week - 5hrs</p>
+            <!-- 1hr daily -->
+            <!-- Previous - 1hr daily -->
+            <!-- 4hrs weekly -->
+            <!-- Previous - 5hrs weekly -->
+            <!-- 11hrs monthly -->
+            <!-- Previous - 18hrs monthly -->
+          </div>
+        </div>
+      </div>
 
-    Exercise
-    1hr <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    4hrs <!-- weekly -->
-    Previous - 5hrs <!-- weekly -->
-    11hrs <!-- monthly -->
-    Previous - 18hrs <!-- monthly -->
+      <div class="activity-card social">
+        <div class="activity-card-icon">
+          <img src="images/icon-social.svg" alt="social">
+        </div>
+        <div class="activity-card-body">
+          <div class="activity-card-header">
+            <span>Social</span>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <div class="activity-card-content">
+            <h2>5hrs</h2>
+            <p>Last Week - 10hrs</p>
+            <!-- 1hr daily -->
+            <!-- Previous - 3hrs daily -->
+            <!-- 5hrs weekly -->
+            <!-- Previous - 10hrs weekly -->
+            <!-- 21hrs monthly -->
+            <!-- Previous - 23hrs monthly -->
+          </div>
+        </div>
+      </div>
 
-    Social
-    1hr <!-- daily -->
-    Previous - 3hrs <!-- daily -->
-    5hrs <!-- weekly -->
-    Previous - 10hrs <!-- weekly -->
-    21hrs <!-- monthly -->
-    Previous - 23hrs <!-- monthly -->
-
-    Self Care
-    0hrs <!-- daily -->
-    Previous - 1hr <!-- daily -->
-    2hrs <!-- weekly -->
-    Previous - 2hrs <!-- weekly -->
-    7hrs <!-- monthly -->
-    Previous - 11hrs <!-- monthly -->
-
+      <div class="activity-card self-care">
+        <div class="activity-card-icon">
+          <img src="images/icon-self-care.svg" alt="self-care">
+        </div>
+        <div class="activity-card-body">
+          <div class="activity-card-header">
+            <span>Self Care</span>
+            <img class="ellipsis" src="images/icon-ellipsis.svg" alt="ellipsis">
+          </div>
+          <div class="activity-card-content">
+            <h2>2hrs</h2>
+            <p>Last Week - 2hrs</p>
+            <!-- 0hrs daily -->
+            <!-- Previous - 1hr daily -->
+            <!-- 2hrs weekly -->
+            <!-- Previous - 2hrs weekly -->
+            <!-- 7hrs monthly -->
+            <!-- Previous - 11hrs monthly -->
+          </div>
+        </div>
+      </div>
+    </article>
   </main>
 
   <footer class="attribution">

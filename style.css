@@ -1,0 +1,212 @@
+:root {
+  --blue: hsl(246, 80%, 60%);
+  --light-red-work: hsl(15, 100%, 70%);
+  --soft-blue-play: hsl(195, 74%, 62%);
+  --light-red-study: hsl(348, 100%, 68%);
+  --lime-green-exercise: hsl(145, 58%, 55%);
+  --violet-social: hsl(264, 64%, 52%);
+  --soft-orange-self-care: hsl(43, 84%, 65%);
+  --very-dark-blue: hsl(226, 43%, 10%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --desaturated-blue: hsl(235, 45%, 61%);
+  --pale-blue: hsl(236, 100%, 87%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: var(--very-dark-blue);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100dvh;
+  min-width: 320px;
+  line-height: 1.5;
+
+  main {
+    margin: auto;
+    /* position: relative; */
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 30px;
+  width: clamp(360px, 100vw, 1260px);
+
+  .profile-card {
+    grid-row: span 2;
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+
+    .profile-header {
+      height: 67.5%;
+      border-radius: 15px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      background-color: var(--blue);
+
+      img {
+        width: 5rem;
+        border: 3px solid white;
+        border-radius: 50%;
+      }
+    }
+
+    .profile-header-text {
+      margin-top: 4rem;
+      color: var(--pale-blue);
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+    }
+
+    .profile-nav {
+      padding: 40px;
+
+      ul {
+        list-style: none;
+
+        li {
+          color: var(--desaturated-blue);
+          margin-bottom: 15px;
+          cursor: pointer;
+          transition: color 0.3s ease;
+        }
+        li:hover {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .activity-card {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+
+    .activity-card-icon {
+      height: 50px;
+      padding: 10px;
+      text-align: end;
+      overflow: hidden;
+      position: relative;
+
+      img {
+        transform: translateY(-20px);
+      }
+    }
+    /* .activity-card-body::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 10px;
+        background-color: #fff;
+      } */
+
+    .activity-card-body {
+      height: 100%;
+      border-radius: 15px 15px 0 0;
+      background-color: var(--dark-blue);
+
+      .activity-card-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 25px;
+        align-items: center;
+        position: relative;
+
+        .ellipsis {
+          cursor: pointer;
+          opacity: 0.5;
+          transition: opacity 0.3s ease;
+        }
+        .ellipsis:hover {
+          opacity: 1;
+        }
+      }
+
+      .activity-card-content {
+        padding: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+
+        h2 {
+          font-size: 3rem;
+          font-weight: 300;
+        }
+        p {
+          color: var(--pale-blue);
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+.work {
+  background-color: var(--light-red-work);
+}
+.play {
+  background-color: var(--soft-blue-play);
+}
+.study {
+  background-color: var(--light-red-study);
+}
+.exercise {
+  background-color: var(--lime-green-exercise);
+}
+.social {
+  background-color: var(--violet-social);
+}
+.self-care {
+  background-color: var(--soft-orange-self-care);
+}
+
+.attribution {
+  font-family: monospace, "Courier New";
+  font-size: 11px;
+  font-weight: 700;
+  color: white;
+  margin-inline: auto;
+  -webkit-user-select: none;
+  user-select: none;
+
+  a:first-child {
+    text-decoration: none;
+    color: rgb(2, 48, 255);
+  }
+
+  a:last-child {
+    text-decoration: none;
+    color: red;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
