@@ -32,7 +32,6 @@ body {
   main {
     margin: auto;
     max-width: 1200px;
-    /* position: relative; */
   }
 }
 
@@ -41,7 +40,6 @@ body {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   padding: 30px;
-  /* width: clamp(360px, 100vw, 1260px); */
   width: fit-content;
 
   .profile-card {
@@ -94,6 +92,7 @@ body {
           cursor: pointer;
           transition: color 0.3s ease;
         }
+        li:nth-child(2),
         li:hover {
           color: white;
         }
@@ -109,7 +108,7 @@ body {
     position: relative;
 
     .activity-card-icon {
-      height: 45px;
+      height: 40px;
       padding: 10px;
       text-align: end;
       overflow: hidden;
@@ -185,9 +184,21 @@ body {
 }
 .exercise {
   background-color: var(--lime-green-exercise);
+
+  .activity-card-icon {
+    img {
+      transform: translateY(-15px) !important;
+    }
+  }
 }
 .social {
   background-color: var(--violet-social);
+
+  .activity-card-icon {
+    img {
+      transform: translateY(-27.5px) !important;
+    }
+  }
 }
 .self-care {
   background-color: var(--soft-orange-self-care);
