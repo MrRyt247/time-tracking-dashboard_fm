@@ -51,6 +51,7 @@ body {
     grid-row: span 2;
     border-radius: 15px;
     background-color: var(--dark-blue);
+    user-select: none;
 
     .profile-header {
       height: 67.5%;
@@ -113,6 +114,7 @@ body {
       text-align: end;
       overflow: hidden;
       position: relative;
+      user-select: none;
 
       img {
         transform: translateY(-20px);
@@ -123,6 +125,7 @@ body {
       height: max-content;
       border-radius: 15px 15px 0 0;
       background-color: var(--dark-blue);
+      user-select: contain;
 
       .activity-card-header {
         display: flex;
